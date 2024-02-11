@@ -13,7 +13,7 @@ const typeDefs = `
     body: String
     createdAt: String
     name: String
-    likes:[String]
+    likes:[Likes]
   }
 
   type Auth {
@@ -25,8 +25,13 @@ const typeDefs = `
     profiles: [Profile]!
     profile(profileId: ID!): Profile
     posts: [Posts]!
+    post(postId: ID!): Posts
     # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
     me: Profile
+  }
+
+  type Likes {
+    _id: ID
   }
 
   type Mutation {
@@ -37,7 +42,7 @@ const typeDefs = `
     addSkill(profileId: ID!, skill: String!): Profile
     removeProfile: Profile
     removeSkill(skill: String!): Profile
-    addLike(postId: String! like:String!): Posts
+    addLike(postId: ID!): Posts
   }
 `;
 

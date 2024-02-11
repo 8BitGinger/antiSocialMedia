@@ -74,5 +74,11 @@
       "Typescript",
       "PWAs"
     ]
+  },
+  {
+    "name": "testAdmin",
+    "email": "test@test.com",
+    "password": "password123",
+    "skills": ["TeX Computer Typesetting", "Algorithms", "Author"]
   }
 ]

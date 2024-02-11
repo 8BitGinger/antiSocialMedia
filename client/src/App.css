@@ -9,6 +9,11 @@ body {
   ) !important;
 }
 
+header {
+  margin: none;
+  margin-bottom: -200px;
+}
+
 .page-title {
   display: flex !important;
   text-align: center;

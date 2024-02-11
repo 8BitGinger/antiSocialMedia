@@ -23,10 +23,13 @@ export const ADD_SKILL = gql`
 `;
 
 export const ADD_LIKE = gql`
-  mutation addLike($postId: ID!, $like: String!) {
-    addLike(postId: $postId, like: $like) {
+  mutation addLike($postId: String!, $like: String!) {
+    addLike(postId: $postId, likes: $like) {
       _id
-      like
+      body
+      createdAt
+      likes
+      name
     }
   }
 `;

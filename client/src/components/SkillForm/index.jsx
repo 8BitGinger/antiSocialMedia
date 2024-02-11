@@ -27,7 +27,7 @@ const SkillForm = ({ profileId }) => {
 
   return (
     <div>
-      <h4>Leave a comment below</h4>
+      <h4>Type your favorite here:</h4>
 
       {Auth.loggedIn() ? (
         <form
@@ -36,7 +36,7 @@ const SkillForm = ({ profileId }) => {
         >
           <div className="col-12 col-lg-9">
             <input
-              placeholder="Leave a comment..."
+              placeholder="Quote here..."
               value={skill}
               className="form-input w-100"
               onChange={(event) => setSkill(event.target.value)}
@@ -45,7 +45,7 @@ const SkillForm = ({ profileId }) => {
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-info btn-block py-3" type="submit">
-              Leave Note
+              Save Quote
             </button>
           </div>
           {error && (

@@ -44,10 +44,6 @@ var options = [
 var choice = options[Math.floor(Math.random() * options.length)];
 
 const PostCard = ({ post: { body, createdAt, _id } }) => {
-  function likePost() {
-    console.log('Like post');
-  }
-
   return (
     <Card fluid>
       <CardContent>
@@ -55,7 +51,10 @@ const PostCard = ({ post: { body, createdAt, _id } }) => {
           <Image className="avatar" floated="left" size="tiny" src={avatar} />
           <CardHeader>
             <div>
-              {choice} # <span className="id-post">{_id}</span>
+              {choice}{' '}
+              <span id="idHolder" className="id-post">
+                {_id}
+              </span>
             </div>
           </CardHeader>
         </div>

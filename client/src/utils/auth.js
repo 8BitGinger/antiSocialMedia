@@ -1,5 +1,9 @@
 import decode from 'jwt-decode';
 
+const initialState = {
+  loggedIn: false,
+};
+
 class AuthService {
   getProfile() {
     return decode(this.getToken());
@@ -19,17 +23,21 @@ class AuthService {
     return false;
   }
 
+  const;
+
   getToken() {
     return localStorage.getItem('id_token');
   }
 
   login(idToken) {
     localStorage.setItem('id_token', idToken);
+    initialState.loggedIn = true;
     window.location.assign('/');
   }
 
   logout() {
     localStorage.removeItem('id_token');
+    initialState.loggedIn = false;
     window.location.reload();
   }
 }

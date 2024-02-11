@@ -20,6 +20,9 @@ const resolvers = {
     posts: async () => {
       return Posts.find().sort({ createdAt: -1 });
     },
+    post: async (parent, { postId }) => {
+      return Posts.findOne({ _id: postId });
+    },
   },
 
   Mutation: {
@@ -63,7 +66,7 @@ const resolvers = {
       }
     },
 
-    addLike: async (parent, { postId, like }, context) => {
+    addLike: async (parent, { postId }, context) => {
       if (context.user) {
         return Posts.findOneAndUpdate(
           { _id: postId },
