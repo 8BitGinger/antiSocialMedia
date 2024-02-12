@@ -18,6 +18,8 @@ import LikeButton from './LikeButton';
 // var relativeTime = require('dayjs/plugin/relativeTime');
 dayjs.extend(relativeTime);
 
+const likeId = localStorage.getItem('likeId');
+
 var options = [
   'IncognitoPost#',
   'AnonymousPost#',
@@ -63,7 +65,7 @@ const PostCard = ({ post: { body, createdAt, _id } }) => {
         <CardMeta>{dayjs(createdAt).fromNow()}</CardMeta>
       </CardContent>
       <CardContent extra>
-        <LikeButton />
+        <LikeButton likeId={likeId} postId={_id} postBody={body} />
       </CardContent>
     </Card>
   );

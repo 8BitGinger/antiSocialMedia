@@ -23,6 +23,7 @@ const Home = () => {
                   <NewPost />
                 </Grid.Row>
                 <Transition.Group>
+                  <h2>Double Click to add Post to your saved quotes</h2>
                   {posts &&
                     posts.map((post) => (
                       <Grid.Column key={post._id}>

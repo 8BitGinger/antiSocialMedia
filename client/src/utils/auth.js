@@ -2,6 +2,7 @@ import decode from 'jwt-decode';
 
 const initialState = {
   loggedIn: false,
+  user: null,
 };
 
 class AuthService {
@@ -32,7 +33,7 @@ class AuthService {
   login(idToken) {
     localStorage.setItem('id_token', idToken);
     initialState.loggedIn = true;
-    window.location.assign('/');
+    window.location.assign('/me');
   }
 
   logout() {
