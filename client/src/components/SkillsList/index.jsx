@@ -4,8 +4,12 @@ import { REMOVE_SKILL } from '../../utils/mutations';
 import { QUERY_ME } from '../../utils/queries';
 
 const SkillsList = ({ skills, isLoggedInUser = false }) => {
-  const [removeSkill, { error }] = useMutation(REMOVE_SKILL, {
-    refetchQueries: [QUERY_ME, 'me'],
+  const [removeSkill, { error }] = useMutation
+  (REMOVE_SKILL, {
+    refetchQueries: [
+      QUERY_ME,
+      'me'
+    ]
   });
 
   const handleRemoveSkill = async (skill) => {

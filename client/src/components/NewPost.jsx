@@ -23,6 +23,8 @@ const NewPost = () => {
     window.location.reload();
   };
 
+  const user = localStorage.getItem('id');
+
   return (
     <div className="card col-12 p-5">
       <form onSubmit={handleOnSubmit}>
