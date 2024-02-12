@@ -34,7 +34,7 @@ const SkillForm = ({ profileId }) => {
           className="flex-row justify-center justify-space-between-md align-center"
           onSubmit={handleFormSubmit}
         >
-          <div className="col-12 col-lg-9">
+          <div className="col-lg-9">
             <input
               placeholder="Thought here..."
               value={skill}
@@ -43,7 +43,7 @@ const SkillForm = ({ profileId }) => {
             />
           </div>
 
-          <div className="col-12 col-lg-3">
+          <div className="">
             <button className="btn btn-info btn-block py-3" type="submit">
               Save
             </button>

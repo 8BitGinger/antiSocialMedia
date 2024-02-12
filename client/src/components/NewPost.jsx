@@ -15,6 +15,7 @@ const NewPost = () => {
     event.preventDefault();
     let body = event.target[0].value;
     console.log(body);
+
     try {
       const { data } = await createPost({
         variables: { body },
@@ -31,12 +32,12 @@ const NewPost = () => {
   return (
     <>
       <GridRow className="page-picture">
-        <a href="#post">
+        <a href="#">
           <div className="post-banner"></div>
         </a>
         <h1>New Post</h1>
       </GridRow>
-      <div className="card newPost">
+      <div id="post" className="card newPost">
         <form onSubmit={handleOnSubmit}>
           <div className="form-group">
             <label htmlFor="post-text">Share Your Thoughts</label>

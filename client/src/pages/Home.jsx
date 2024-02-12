@@ -28,7 +28,7 @@ const Home = () => {
                   <a href="#feed">
                     <div className="banner"></div>
                   </a>
-                  <h1>The Feed</h1>
+                  <h1 id="feed">The Feed</h1>
                 </GridRow>
                 <Transition.Group>
                   <h2>Double Click to add Post to your saved quotes</h2>

@@ -5,8 +5,6 @@ import { QUERY_SINGLE_POST, QUERY_ME } from '../utils/queries';
 import { Button } from 'semantic-ui-react';
 import Auth from '../utils/auth';
 
-const likeId = localStorage.getItem('likeId');
-
 const LikeButton = (props) => {
   const [liked, setLiked] = useState(false);
 
@@ -20,10 +18,10 @@ const LikeButton = (props) => {
     event.preventDefault();
     console.log(props.postBody);
 
-    console.log(likeId);
+    console.log(props.likeId);
     setLiked(true);
     setSkill(props.postBody);
-    setProfileId(likeId);
+    setProfileId(props.likeId);
 
     try {
       const data = await addSkill({

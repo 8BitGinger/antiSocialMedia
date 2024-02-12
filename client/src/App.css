@@ -93,12 +93,12 @@ header {
   top: 0;
   z-index: 100;
   display: flex;
-
+  margin-left: -50px;
   justify-content: center;
 }
 
 .menu a {
-  color: white !important;
+  color: rgb(42, 225, 94) !important;
 }
 
 .dev-title {
@@ -367,6 +367,7 @@ form {
   font-family: 'Rock Salt', cursive !important;
   padding: 5px;
   color: white !important;
+  margin-top: 10px;
 }
 
 .meta {
@@ -376,12 +377,18 @@ form {
   margin-bottom: 0;
 }
 
+.meta a {
+  font-size: 35px !important;
+  padding: 0;
+  margin: 0;
+}
+
 .low-card {
   background-color: rgba(40, 40, 40, 0.587) !important;
 }
 
 .about {
-  background-color: dodgerblue !important;
+  background-color: rgb(6, 143, 255) !important;
   overflow: hidden;
   max-width: 300px;
   max-height: 400px;
@@ -428,13 +435,20 @@ form {
   align-items: center;
   text-align: center;
 
-  margin-top: 10px;
-  margin-left: -15px;
+  margin-top: 5px;
 }
 
 .contact-strip a {
-  color: white !important;
-  margin: 10px;
+  color: yellow !important;
+  margin: 5px;
+}
+
+.contact-strip a:hover {
+  color: rgb(109, 255, 47) !important;
+}
+
+.content {
+  border-radius: 15px;
 }
 
 .dev {
@@ -469,7 +483,7 @@ form {
 }
 
 .newPost textarea {
-  height: 150px;
+  height: 130px;
   margin: auto;
   margin-top: 0;
   align-self: center;
@@ -481,7 +495,6 @@ form {
     rgb(255, 255, 255),
     rgb(188, 250, 198)
   ) !important;
-  color: white;
 }
 
 .newPost form {
@@ -596,7 +609,7 @@ form {
   }
 
   .profile-container {
-    width: 100vw !important;
+    width: 80vw !important;
     display: flex;
     margin: auto;
     justify-content: center;
