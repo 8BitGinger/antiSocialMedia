@@ -11,7 +11,10 @@ body {
 
 header {
   margin: none;
-  margin-bottom: -200px;
+  max-height: 250px;
+  z-index: 99;
+  width: auto;
+  margin-bottom: 20px;
 }
 
 .page-title {
@@ -30,10 +33,10 @@ header {
 .page-picture {
   display: flex !important;
   text-align: center;
-
+  justify-content: center;
   align-items: center;
-  margin: 20px 10px;
-  margin-bottom: 0;
+  margin: 20px 0px;
+
   align-content: center;
 }
 
@@ -41,6 +44,14 @@ header {
 .page-picture h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
 }
 
 .container h1 {
@@ -58,22 +69,32 @@ header {
   margin-bottom: 0;
 }
 
+.display-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
 .page-picture h1 {
   color: yellow;
 
   text-align: left;
 
   margin: 30px;
-  margin-left: 10px;
+
   margin-top: 45px;
   font-size: 30px;
 }
 
 .menu {
-  position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
   z-index: 100;
+  display: flex;
+
+  justify-content: center;
 }
 
 .menu a {
@@ -185,9 +206,18 @@ header {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin: auto;
+  margin: auto !important;
   text-align: center;
   align-items: center;
+  justify-content: center;
+}
+
+.profile-container img {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
   justify-content: center;
 }
 
@@ -208,6 +238,10 @@ header {
 .card {
   background: rgba(0, 0, 0, 0.452) !important;
   border-radius: 25px !important;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: auto;
 }
 
 .extra {
@@ -239,6 +273,13 @@ header {
 
 .button {
   margin: 10px;
+}
+
+.center {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 
 form {
@@ -296,6 +337,19 @@ form {
   opacity: calc(1);
 }
 
+.banner {
+  position: relative;
+  margin: auto;
+  height: 120px;
+  width: 120px;
+  background: url('./assets/banner-pic.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  opacity: calc(1 - 0.3);
+  border: greenyellow 3px solid;
+}
+
 .dev-banner {
   position: relative;
   margin: auto;
@@ -317,7 +371,7 @@ form {
 
 .meta {
   color: white !important;
-  margin-left: 50px;
+  padding: 10px;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -327,8 +381,14 @@ form {
 }
 
 .about {
-  background-color: rgb(16, 177, 16) !important;
+  background-color: dodgerblue !important;
   overflow: hidden;
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .about a {
@@ -373,8 +433,8 @@ form {
 }
 
 .contact-strip a {
-  font-size: 30px !important;
-  margin: 15px;
+  color: white !important;
+  margin: 10px;
 }
 
 .dev {
@@ -387,32 +447,33 @@ form {
 
 .contain-post {
   display: flex;
+  flex-direction: column;
   justify-content: center !important;
   text-align: center;
   margin: auto;
-  height: fit-content;
-  width: 100%;
+  margin-top: 30px !important;
+  width: 60vw;
+}
+
+#about {
+  display: flex;
 }
 
 .newPost {
   width: 100%;
-  align-items: center;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  flex-direction: column;
 }
 
-.newPost h1 {
+.newPost label {
   font-family: 'Rock Salt', cursive;
-  color: greenyellow;
+  color: dodgerblue;
 }
 
 .newPost textarea {
-  width: 350px !important;
   height: 150px;
-  margin-left: -20px !important;
+  margin: auto;
   margin-top: 0;
+  align-self: center;
+
   border: 2px solid rgb(193, 232, 22) !important;
   border-radius: 25px !important;
   background: linear-gradient(
@@ -448,9 +509,24 @@ form {
   margin-top: 3px;
 }
 
+.profile-title {
+  font-size: 35px;
+  color: rgb(7, 253, 7) !important;
+}
+
+.profile-secondary {
+  font-size: 15px;
+  padding: 5px;
+  color: rgb(7, 253, 7) !important;
+}
+
 .btn:hover {
   scale: 1.1;
   cursor: pointer;
+}
+
+.float {
+  animation: floating 3s infinite;
 }
 
 @keyframes floating {
@@ -508,4 +584,131 @@ form {
   100% {
     transform: translateX(0);
   }
+}
+
+@media screen and (max-width: 600px) {
+  .scoot-left h1 {
+    margin-left: -10px;
+  }
+
+  .scoot-left {
+    scale: 0.9;
+  }
+
+  .profile-container {
+    width: 100vw !important;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .social {
+    margin-left: -30px;
+  }
+
+  .social h1 {
+    margin-left: -5px;
+  }
+
+  .card {
+    justify-self: center;
+  }
+
+  .logo-image {
+    margin-left: -10px;
+    max-width: 40vw;
+  }
+
+  .column {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+  }
+
+  #feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+
+  .extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin: 0px;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu h1 {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-banner,
+  .dev-banner,
+  .banner {
+    height: 80px;
+    width: 80px;
+  }
+
+  .form textarea {
+    width: 250px !important;
+  }
+
+  .contain-post {
+    margin-top: 0 !important;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  .page-picture {
+    margin-top: 0;
+  }
+
+  .page-title {
+    padding: 0;
+    max-width: 40vw;
+  }
+  .scoot-left h1 {
+    margin-left: -50px;
+  }
+
+  .col-12 {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 400px) {
 }

@@ -1,7 +1,15 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import React, { useState } from 'react';
-
+import {
+  CardMeta,
+  CardHeader,
+  Button,
+  CardContent,
+  Card,
+  Icon,
+  Image,
+} from 'semantic-ui-react';
 import SkillsList from '../components/SkillsList';
 import SkillForm from '../components/SkillForm';
 
@@ -41,9 +49,30 @@ const Profile = () => {
       </h4>
     );
   }
+  console.log(data);
 
   return (
     <div>
+      <div className="profile-container">
+        <Card>
+          <h2 className="green">Your Hidden Profile</h2>
+
+          <Image
+            src="https://img.freepik.com/premium-vector/man-silhouette-profile-male-avatar-anonymous-icon-censored-face_434359-85.jpg?w=996"
+            wrapped
+            ui={false}
+            className="profile-pic"
+          />
+          <CardContent>
+            <CardHeader className="profile-title">{profile.name}</CardHeader>
+            <CardMeta>
+              <span className="profile-secondary">Email: {profile.email}</span>
+              <br></br>
+              <span className="profile-secondary">ID# {profile._id}</span>
+            </CardMeta>
+          </CardContent>
+        </Card>
+      </div>
       <h2 className="card-header">
         {profileId ? `${profile.name}'s` : 'Hello'} {profile.name}
       </h2>

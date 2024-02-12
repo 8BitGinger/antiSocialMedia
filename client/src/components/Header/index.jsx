@@ -11,8 +11,8 @@ const Header = () => {
   };
   return (
     <header className="">
-      <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
-        <Link className="text-dark row menu" to="/">
+      <div className="container">
+        <Link className="text-dark row menu float" to="/">
           <img src={logo} alt="news" className="logo-image" />
 
           <h1 className="m-0 page-title" style={{ fontSize: '3rem' }}>

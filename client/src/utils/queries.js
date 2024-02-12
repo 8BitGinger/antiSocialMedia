@@ -16,6 +16,7 @@ export const QUERY_SINGLE_PROFILE = gql`
       _id
       name
       skills
+      email
     }
   }
 `;
@@ -26,6 +27,7 @@ export const QUERY_ME = gql`
       _id
       name
       skills
+      email
     }
   }
 `;

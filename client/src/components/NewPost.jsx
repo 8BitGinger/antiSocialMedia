@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { CREATE_POST_MUTATION } from '../utils/mutations';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+import { GridRow } from 'semantic-ui-react';
 
 const NewPost = () => {
   const [posts, setPosts] = useState('');
@@ -26,21 +29,29 @@ const NewPost = () => {
   const user = localStorage.getItem('id');
 
   return (
-    <div className="card col-12 p-5">
-      <form onSubmit={handleOnSubmit}>
-        <div className="form-group">
-          <label htmlFor="post-text">Share Your Thoughts</label>
-          <textarea
-            className="form-input"
-            placeholder="What's on your mind?"
-            id="post-text"
-          ></textarea>
-        </div>
-        <button className="btn primary" type="submit">
-          Submit
-        </button>
-      </form>
-    </div>
+    <>
+      <GridRow className="page-picture">
+        <a href="#post">
+          <div className="post-banner"></div>
+        </a>
+        <h1>New Post</h1>
+      </GridRow>
+      <div className="card newPost">
+        <form onSubmit={handleOnSubmit}>
+          <div className="form-group">
+            <label htmlFor="post-text">Share Your Thoughts</label>
+            <textarea
+              className="form-input"
+              placeholder="What's on your mind?"
+              id="post-text"
+            ></textarea>
+          </div>
+          <button className="btn primary" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 
