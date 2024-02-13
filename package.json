@@ -17,7 +17,6 @@
     "concurrently": "^5.3.0"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "dotenv": "^16.4.1"
   }
 }

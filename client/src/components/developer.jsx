@@ -11,9 +11,6 @@ import {
 import headshot from '../assets/about.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const DevCard = () => (
   <div className="center">
@@ -39,15 +36,12 @@ const DevCard = () => (
           </CardHeader>
           <div className="contact-strip">
             <CardMeta>
-              <a target="blank" href="https://ryanfann.netlify.app/">
-                {/* <Icon name="briefcase" /> */}
-                <FontAwesomeIcon icon={faBriefcase} />
-              </a>
+              <a href="mailto:ryan.fann@gmail.com">Email</a>
             </CardMeta>
             <CardMeta>
               <a target="blank" href="https://github.com/8BitGinger">
                 {/* <Icon name="github" /> */}
-                <FontAwesomeIcon icon={faGithub} />
+                GitHub{' '}
               </a>
             </CardMeta>
             <CardMeta>

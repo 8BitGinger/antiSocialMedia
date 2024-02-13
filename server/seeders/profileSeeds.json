@@ -80,5 +80,15 @@
     "email": "test@test.com",
     "password": "password123",
     "skills": ["TeX Computer Typesetting", "Algorithms", "Author"]
+  },
+  {
+    "ryan": "ryanfann",
+    "email": "ryan.fann@gmail.com",
+    "password": "password123",
+    "skills": [
+      "wow what a wonderful day!",
+      "I Love to code!",
+      "Nobody is professional when Gangtas Paradise plays"
+    ]
   }
 ]
