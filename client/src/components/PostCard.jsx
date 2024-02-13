@@ -16,7 +16,7 @@ import avatar from '../assets/coder.png';
 import LikeButton from './LikeButton';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-// import DropDownReaction from './dropdown';
+import Reaction from './Reaction';
 
 // var relativeTime = require('dayjs/plugin/relativeTime');
 dayjs.extend(relativeTime);

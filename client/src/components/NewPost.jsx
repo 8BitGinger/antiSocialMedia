@@ -32,7 +32,7 @@ const NewPost = () => {
   return (
     <>
       <GridRow className="page-picture">
-        <a href="#">
+        <a href="#post">
           <div className="post-banner"></div>
         </a>
         <h1>New Post</h1>

@@ -16,9 +16,11 @@
 
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **SocialEyes** is an _anti_ Social Media App designed to quickly post thoughts, ideas, or musings for others to view, but not engage with. The point is simple: getting Eyes or Likes on your thoughts. Other users can see your posts and save them to their own profile if they like them.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **SocialEyes** is an _anti_ Social Media App designed to quickly post thoughts, ideas, or musings for others to view, but not engage with. The point is simple: getting Eyes or Likes on your thoughts not you. Other users can see your posts and save them to their own profile if they like them.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All posts are public, but your name and info are not shown allowing a new layer of anonymity and judgement free sharing allowing you to share without reservation. Post away if you have something to share or just scroll through the feed looking for inspiration, a laugh, or just to kill the time! Or head to your own Profile page and view your private and saved posts.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All posts are public, but your name and info are not shown allowing a new layer of anonymity and judgement free sharing allowing you to share without reservation. Post away if you have something to share to the masses or just scroll through the feed looking for inspiration, a laugh, or just to kill the time!
+**Lurk in peace.** Explore a diverse feed of anonymous posts at your own pace. No pressure to comment, like, or follow
+just pure observation!
 
 ---
 
