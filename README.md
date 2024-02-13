@@ -26,7 +26,7 @@ just pure observation!
 
 <div align="center">
 
-## Table of Contents
+## Table of Content
 
 </div>
 
