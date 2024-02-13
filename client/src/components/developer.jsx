@@ -40,7 +40,7 @@ const DevCard = () => (
             </CardMeta>
             <CardMeta>
               <a target="blank" href="https://github.com/8BitGinger">
-                {/* <Icon name="github" /> */}
+                <Icon name="github" />
                 GitHub{' '}
               </a>
             </CardMeta>

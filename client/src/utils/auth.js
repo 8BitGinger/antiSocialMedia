@@ -33,6 +33,7 @@ class AuthService {
   login(idToken) {
     localStorage.setItem('id_token', idToken);
     initialState.loggedIn = true;
+    initialState.user = decode(idToken);
     window.location.assign('/me');
   }
 

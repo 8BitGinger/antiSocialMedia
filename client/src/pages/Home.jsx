@@ -1,4 +1,4 @@
-import { useQuery } from '@apollo/client';
+import { getApolloContext, useQuery } from '@apollo/client';
 import { Grid, Transition, GridRow, Button, Icon } from 'semantic-ui-react';
 import PostCard from '../components/PostCard';
 import NewPost from '../components/NewPost';
@@ -12,8 +12,8 @@ const Home = () => {
 
   return (
     <main>
-      <div className="">
-        <div className="">
+      <div>
+        <div>
           {loading ? (
             <div>Loading...</div>
           ) : (

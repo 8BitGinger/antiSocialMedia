@@ -78,7 +78,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80vw !important;
 
   padding: 20px;
   margin: 20px 0px;
@@ -296,16 +295,6 @@ header {
   font-size: 30px;
   margin: 0px !important;
   padding: 10px !important;
-}
-
-.primary {
-  background-color: yellow !important;
-  color: black !important;
-}
-
-.secondary {
-  background-color: rgb(26, 122, 231) !important;
-  color: white !important;
 }
 
 .button {
@@ -579,6 +568,16 @@ form {
 .btn:hover {
   scale: 1.1;
   cursor: pointer;
+}
+
+.primary {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.secondary {
+  background-color: rgb(26, 122, 231) !important;
+  color: white !important;
 }
 
 .float {
