@@ -27,7 +27,7 @@ const SkillForm = ({ profileId }) => {
 
   return (
     <div>
-      <h4 className="saved">Save a private thought:</h4>
+      <h4 clasName="saved">Save a private thought:</h4>
 
       {Auth.loggedIn() ? (
         <form

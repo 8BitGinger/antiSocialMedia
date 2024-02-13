@@ -8,6 +8,7 @@ import Auth from '../utils/auth';
 const likeId = localStorage.getItem('likeId');
 
 const LikeButton = (props) => {
+  
   const [liked, setLiked] = useState(false);
 
   const [skill, setSkill] = useState('');

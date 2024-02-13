@@ -24,7 +24,7 @@ const SkillsList = ({ skills, isLoggedInUser = false }) => {
 
   return (
     <div>
-      <div className="flex-row saved justify-space-between my-4">
+      <div className="flex-row justify-space-between my-4">
         {skills &&
           skills.map((skill) => (
             <div key={skill} className="col">
