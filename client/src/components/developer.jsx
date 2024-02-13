@@ -44,15 +44,6 @@ const DevCard = () => (
                 GitHub{' '}
               </a>
             </CardMeta>
-            <CardMeta>
-              <a
-                target="blank"
-                href="https://www.linkedin.com/in/ryanfanntastic/"
-              >
-                <Icon name="linkedin" />
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </CardMeta>
           </div>
         </CardContent>
       </Card>
