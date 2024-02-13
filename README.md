@@ -1,6 +1,6 @@
 <div align="center">
 
-![SocialEyesS](./readme-pics/tinyLogo.png)
+![SocialEyes](./readme-pics/tinyLogo.png)
 
 # Social Eyes antiSocial Media Website
 
