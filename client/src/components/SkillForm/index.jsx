@@ -27,14 +27,14 @@ const SkillForm = ({ profileId }) => {
 
   return (
     <div>
-      <h4>Save a private thought:</h4>
+      <h4 className="saved">Save a private thought:</h4>
 
       {Auth.loggedIn() ? (
         <form
           className="flex-row justify-center justify-space-between-md align-center"
           onSubmit={handleFormSubmit}
         >
-          <div className="col-lg-9">
+          <div className="saved col-lg-9">
             <input
               placeholder="Thought here..."
               value={skill}
@@ -44,7 +44,7 @@ const SkillForm = ({ profileId }) => {
           </div>
 
           <div className="">
-            <button className="btn btn-info btn-block py-3" type="submit">
+            <button className="btn secondary btn-block py-3" type="submit">
               Save
             </button>
           </div>

@@ -16,11 +16,10 @@ import avatar from '../assets/coder.png';
 import LikeButton from './LikeButton';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+// import DropDownReaction from './dropdown';
 
 // var relativeTime = require('dayjs/plugin/relativeTime');
 dayjs.extend(relativeTime);
-
-const likeId = localStorage.getItem('likeId');
 
 var options = [
   'IncognitoPost#',
@@ -47,7 +46,7 @@ var options = [
 ];
 var choice = options[Math.floor(Math.random() * options.length)];
 
-const PostCard = ({ post: { body, createdAt, _id } }) => {
+const PostCard = ({ post: { body, createdAt, _id }, likeId }) => {
   return (
     <motion.div
       variants={fadeIn('right', 0.9)}
@@ -74,7 +73,7 @@ const PostCard = ({ post: { body, createdAt, _id } }) => {
           <CardMeta>{dayjs(createdAt).fromNow()}</CardMeta>
         </CardContent>
         <CardContent extra>
-          <LikeButton likeId={likeId} postId={_id} postBody={body} />
+          <LikeButton postId={_id} postBody={body} />
         </CardContent>
       </Card>
     </motion.div>

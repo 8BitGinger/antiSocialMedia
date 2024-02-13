@@ -76,7 +76,7 @@ const Profile = () => {
       <h2 className="card-header">
         {profileId ? `${profile.name}'s` : 'Hello'} {profile.name}
       </h2>
-      <h3>Saved Posts:</h3>
+      <h3>Your Wall:</h3>
 
       {profile.skills?.length > 0 && (
         <SkillsList

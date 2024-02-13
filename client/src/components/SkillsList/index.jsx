@@ -19,21 +19,21 @@ const SkillsList = ({ skills, isLoggedInUser = false }) => {
   };
 
   if (!skills.length) {
-    return <h3>No Skills Yet</h3>;
+    return <h3>No Saved Posts Yet</h3>;
   }
 
   return (
     <div>
-      <div className="flex-row justify-space-between my-4">
+      <div className="flex-row saved justify-space-between my-4">
         {skills &&
           skills.map((skill) => (
             <div key={skill} className="col">
               <div className="card mb-3">
-                <h4 className="card-header bg-dark text-light p-2 m-0 display-flex align-center">
+                <h4 className=" text-light m-3 display-flex saved align-center">
                   <span>{skill}</span>
                   {isLoggedInUser && (
                     <button
-                      className="btn btn-sm btn-danger ml-auto"
+                      className="btn btn-sm btn-danger ml-3"
                       onClick={() => handleRemoveSkill(skill)}
                     >
                       X

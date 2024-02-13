@@ -1,7 +1,6 @@
 import { useQuery } from '@apollo/client';
 import { Grid, Transition, GridRow, Button, Icon } from 'semantic-ui-react';
 import PostCard from '../components/PostCard';
-import ProfileList from '../components/ProfileList';
 import NewPost from '../components/NewPost';
 import DevCard from '../components/developer';
 
@@ -30,8 +29,8 @@ const Home = () => {
                   </a>
                   <h1 id="feed">The Feed</h1>
                 </GridRow>
-                <Transition.Group>
-                  <h2>Double Click to add Post to your saved quotes</h2>
+                <Transition.Group className="row">
+                  <h2>Double Click to Save Post to your Profile</h2>
                   {posts &&
                     posts.map((post) => (
                       <Grid.Column key={post._id}>

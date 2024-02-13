@@ -54,6 +54,11 @@ header {
   text-align: center;
 }
 
+.container button {
+  text-align: center;
+  align-self: center;
+}
+
 .container h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 40px;
@@ -73,7 +78,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80vw;
+  width: 80vw !important;
+
   padding: 20px;
   margin: 20px 0px;
 }
@@ -161,6 +167,11 @@ header {
   font-family: 'Rock Salt', cursive;
 }
 
+.spice {
+  font-family: 'Rock Salt', cursive;
+  color: greenyellow;
+}
+
 .form {
   font-size: 18px !important;
 }
@@ -200,13 +211,18 @@ header {
   opacity: calc(1 - 0.1);
   border: white solid 1px;
   font-size: 18px;
+  font-family: Cabin;
+}
+
+.saved {
+  font-family: Cabin;
 }
 
 .profile-container {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin: auto !important;
+  margin-top: 30px !important;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -225,6 +241,32 @@ header {
   max-width: 200px;
   text-align: center;
   align-self: center;
+}
+
+.paragraph {
+  border: 1px solid rgba(255, 255, 255, 0.571);
+  border-radius: 15px;
+}
+
+.paragraph p {
+  font-size: 30px;
+  color: rgb(254, 254, 251);
+  font-family: 'Ysabeau Office', sans-serif;
+  margin: 20px;
+}
+
+.login {
+  margin-top: 30px;
+}
+
+.top {
+  margin-top: 50px;
+}
+
+.info {
+  background-color: rgb(94, 99, 110) !important;
+  border-radius: 50%;
+  color: white;
 }
 
 /* .content {
@@ -267,7 +309,7 @@ header {
 }
 
 .secondary {
-  background-color: rgb(26, 91, 231) !important;
+  background-color: rgb(26, 122, 231) !important;
   color: white !important;
 }
 
@@ -384,11 +426,15 @@ form {
 }
 
 .low-card {
-  background-color: rgba(40, 40, 40, 0.587) !important;
+  background: linear-gradient(
+    90deg,
+    dodgerblue 20%,
+    rgb(39, 207, 9) 100%
+  ) !important;
 }
 
 .about {
-  background-color: rgb(6, 143, 255) !important;
+  background-color: rgba(16, 16, 16, 0.587) !important;
   overflow: hidden;
   max-width: 300px;
   max-height: 400px;
@@ -480,6 +526,8 @@ form {
 .newPost label {
   font-family: 'Rock Salt', cursive;
   color: dodgerblue;
+  margin-bottom: 15px;
+  margin-top: -10px;
 }
 
 .newPost textarea {

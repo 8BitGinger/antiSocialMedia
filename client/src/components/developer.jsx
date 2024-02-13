@@ -25,7 +25,7 @@ const DevCard = () => (
       id="about"
     >
       <Grid.Row className="page-picture">
-        <a href="#dev">
+        <a href="https://ryanfann.netlify.app/">
           <div className="dev-banner"></div>
         </a>
         <h1>The Developer</h1>

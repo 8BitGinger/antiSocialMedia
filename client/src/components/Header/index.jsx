@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
-import logo from '../../assets/tinyLogo - no back.png';
+import logo from '../../assets/tinyLogo - no back3.png';
 
 const Header = () => {
   const logout = (event) => {
@@ -34,6 +36,9 @@ const Header = () => {
               >
                 Logout
               </button>
+              <Link className="btn info btn-md  m-2" to="/about">
+                ℹ
+              </Link>
             </>
           ) : (
             <>
@@ -42,6 +47,9 @@ const Header = () => {
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/signup">
                 Signup
+              </Link>
+              <Link className="btn info btn-lg btn-light m-2" to="/about">
+                ℹ
               </Link>
             </>
           )}
