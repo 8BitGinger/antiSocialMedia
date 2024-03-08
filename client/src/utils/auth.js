@@ -32,6 +32,7 @@ class AuthService {
 
   login(idToken) {
     localStorage.setItem('id_token', idToken);
+    localStorage.setItem('likeId', decode(idToken));
     initialState.loggedIn = true;
     initialState.user = decode(idToken);
     window.location.assign('/me');

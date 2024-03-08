@@ -53,7 +53,6 @@ const PostCard = ({ post: { body, createdAt, _id }, likeId }) => {
       initial="hidden"
       whileInView={'show'}
       viewport={{ once: false, amount: 0.7 }}
-      className=""
     >
       <Card fluid className="display-post">
         <CardContent>
@@ -73,7 +72,7 @@ const PostCard = ({ post: { body, createdAt, _id }, likeId }) => {
           <CardMeta>{dayjs(createdAt).fromNow()}</CardMeta>
         </CardContent>
         <CardContent extra>
-          <LikeButton postId={_id} postBody={body} />
+          <LikeButton postId={_id} postBody={body} likeId={likeId} />
         </CardContent>
       </Card>
     </motion.div>

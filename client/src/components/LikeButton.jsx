@@ -8,7 +8,6 @@ import Auth from '../utils/auth';
 const likeId = localStorage.getItem('likeId');
 
 const LikeButton = (props) => {
-  
   const [liked, setLiked] = useState(false);
 
   const [skill, setSkill] = useState('');
@@ -24,7 +23,7 @@ const LikeButton = (props) => {
     console.log(likeId);
     setLiked(true);
     setSkill(props.postBody);
-    setProfileId(likeId);
+    setProfileId(props.likeId);
 
     try {
       const data = await addSkill({

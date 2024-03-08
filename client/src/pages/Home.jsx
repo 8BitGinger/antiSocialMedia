@@ -6,7 +6,10 @@ import DevCard from '../components/developer';
 
 import { QUERY_POSTS } from '../utils/queries';
 
+const likeId = localStorage.getItem('likeId');
+
 const Home = () => {
+  console.log(likeId);
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
 
@@ -34,7 +37,7 @@ const Home = () => {
                   {posts &&
                     posts.map((post) => (
                       <Grid.Column key={post._id}>
-                        <PostCard post={post} />
+                        <PostCard post={post} likeId={likeId} />
                       </Grid.Column>
                     ))}
                 </Transition.Group>
