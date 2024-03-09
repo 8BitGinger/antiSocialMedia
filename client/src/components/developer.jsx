@@ -8,6 +8,10 @@ import {
   Icon,
   Grid,
 } from 'semantic-ui-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import headshot from '../assets/about.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -36,12 +40,27 @@ const DevCard = () => (
           </CardHeader>
           <div className="contact-strip">
             <CardMeta>
-              <a href="mailto:ryan.fann@gmail.com">Email</a>
-            </CardMeta>
-            <CardMeta>
-              <a target="blank" href="https://github.com/8BitGinger">
-                <Icon name="github" />
-                GitHub{' '}
+              <a
+                href="mailto:ryan.fann@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/ryanfanntastic"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/8BitGinger"
+              >
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </CardMeta>
           </div>
